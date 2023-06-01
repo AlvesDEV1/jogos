@@ -159,19 +159,6 @@
             }
         }
 
-        @charset "UTF-8";
-
-        /* Typical Device Breakpoints
------------------------------
-Pequenas telas: até 600px;
-Celular: de 600px até 768px;
-Tablet: 768px até 992px;
-Desktop: 992px até 1200px; e
-Telas grandes: acima de 1200px.
-*/
-
-        @media screen and (min-width: 768px) and (max-width: 992px) {}
-
         /* main */
         .info {
             display: flex;
@@ -194,9 +181,7 @@ Telas grandes: acima de 1200px.
         }
 
         main {
-            position: relative;
-            height: 100vh;
-            width: 100vw;
+            padding: 8px;
         }
 
         .vs {
@@ -205,18 +190,24 @@ Telas grandes: acima de 1200px.
         }
 
         .jogo1 {
+            display: flex;
             position: absolute;
-            top: 50%;
+            top: 75%;
             left: 50%;
-            width: 600px;
-            max-width: none;
             transform: translate(-50%, -50%);
+            overflow: hidden;
             background-color: white;
+            max-width: none;
             border-radius: 20px;
             box-shadow: 0px 5px 10px #411536;
             justify-content: space-between;
             align-items: center;
         }
+
+        .imgtime {
+            width: 150px;
+        }
+
     </style>
 </head>
 
@@ -266,11 +257,11 @@ Telas grandes: acima de 1200px.
             <img class="icon" src="./logotorneio2.png" alt="logo-futchurras" class="logotorneio2">
             <div class="texto-torneio">3º Torneio FUTchurras ⚽</div>
         </nav>
-        <section class="jogo1">
-            <div>
-                <img src="./ARAVIG.png" alt="aravig" title="Aravig" id="aravig">
+        <section>
+            <div class="jogo1">
+                <img src="./ARAVIG.png" alt="aravig" title="Aravig" class="imgtime">
                 <img src="./closemenu.png" alt="vs" class="vs" id="vs">
-                <img src="./PSG.png" alt="psg" title="PSG" id="psg">
+                <img src="./PSG.png" alt="psg" title="PSG" class="imgtime">
             </div>
         </section>
 
